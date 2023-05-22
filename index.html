@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container" id="libraryContainer">
+
+
+    <!-- Heading -->
+    <div class="heading-div">
+      <h1 class="heading">Add Book</h1>
+    </div>
+
+
+    <!-- Form -->
+    <form id="book-form">
+      <!-- Title Input -->
+      <div>
+        <label for="title" class="title-label w-full label">Title</label>
+        <input type="text" id="title" class="title-input w-full input">
+      </div>
+
+      <!-- Author Input -->
+      <div>
+        <label for="author" class="author-label w-full label">Author</label>
+        <input type="text" id="author" class="author-input w-full input">
+      </div>
+
+      <!-- ISBN Input -->
+      <div>
+        <label for="ISBN" class="ISBN-label w-full label">ISBN</label>
+        <input type="text" id="isbn" class="ISBN-input w-full input">
+      </div>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" class="submit-btn btn w-full">
+    </form>
+
+    <table class="table">
+      <thead>
+        
+        <tr>
+          <th>Serial No.</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+        </tr>
+      </thead>
+
+      <tbody id="bookList">
+        
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
